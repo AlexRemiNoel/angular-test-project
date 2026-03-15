@@ -2,12 +2,35 @@
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
+  background-color: aqua;
 
 }
 
-mat-sidenav-container{
-    position:static;
+.sidenav-container {
+  height: 100%;
 }
-.mat-drawer-container {
-  position: static;
+
+mat-sidenav {
+  transition: width 0.3s ease;
+  overflow: hidden;
+
+  &.expanded {
+    width: 10%;
+  }
+
+  &.collapsed {
+    width: 3%;
+  }
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+mat-nav-list a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
