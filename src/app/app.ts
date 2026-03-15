@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Navbar } from "./features/user/components/navbar/navbar";
+import { HomePage } from "./features/user/pages/home-page/home-page";
+import { MatDrawerContainer } from "@angular/material/sidenav";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar],
+  imports: [RouterOutlet, HomePage, MatDrawerContainer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

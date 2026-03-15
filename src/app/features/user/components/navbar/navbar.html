@@ -1,15 +1,7 @@
-<ul>
-        <li>
-            <a href="/" class="active">
-                Home
-            </a>
-        </li>
-        <li><a href="/identities">
-                Identities
-            </a>
-        </li>
-        <li><a href="about">
-                About
-            </a>
-        </li>
-    </ul>
+<mat-sidenav-container class="example-container" [hasBackdrop]="hasBackdrop.value">
+    <mat-sidenav #sidenav [mode]="mode.value!" [position]="position.value!">
+      <p><button matButton (click)="sidenav.toggle()">Toggle</button></p>
+      <p>
+        <label>Test input for drawer<input/></label>
+      </p>
+    </mat-sidenav>

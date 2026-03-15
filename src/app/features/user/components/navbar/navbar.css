@@ -1,6 +1,13 @@
-div{
-    border-right: none;
-    height: ;
-    width: 10%;
-    height: fill;
+mat-sidenav-container {
+  width: 15%;
+  
+  font-size: medium;
+  text-align: center;
+  /* height: 100%; */
+}
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
