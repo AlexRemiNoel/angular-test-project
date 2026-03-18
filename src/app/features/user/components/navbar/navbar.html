@@ -1,4 +1,4 @@
-
+  <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" opened [class.expanded]="isExpanded" [class.collapsed]="!isExpanded">
 
     <div class="toggle-btn">
@@ -8,18 +8,16 @@
     </div>
 
     <mat-nav-list>
-      @for (item of navItems; track item.id){
+      @for (item of routes; track $index){
       <a mat-list-item
-         href="item.route"
-         [matTooltip]="!isExpanded ? item.label : ''"
-         matTooltipPosition="right">
+        [routerLink]="item.path" 
+        routerLinkActive="active"
+        [matTooltip]="!isExpanded ? item.title : ''"
+        matTooltipPosition="right">
         
-
         <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
-
-        <!-- Label only shows when expanded -->
-       @if (isExpanded) {
-        <span matListItemTitle>{{ item.label }}</span>
+        @if (isExpanded) {
+        <span matListItemTitle>{{ item.title }}</span>
         }
       
       </a>
@@ -30,3 +28,6 @@
 
   <!-- Main Content -->
   <mat-sidenav-content>
+    <ng-content />
+  </mat-sidenav-content>
+  </mat-sidenav-container>

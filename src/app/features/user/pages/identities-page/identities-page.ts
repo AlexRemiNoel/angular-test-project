@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { MatSidenavContent } from "@angular/material/sidenav";
+import { Navbar } from "../../components/navbar/navbar";
 
 @Component({
   selector: 'app-identities-page',
-  imports: [MatSidenavContent],
+  imports: [Navbar],
   templateUrl: './identities-page.html',
   styleUrl: './identities-page.css',
 })
