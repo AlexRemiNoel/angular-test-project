@@ -3,25 +3,27 @@
 
     <div class="toggle-btn">
       <button mat-icon-button (click)="toggleSidebar()">
-        <mat-icon>{{ isExpanded ? 'menu_open' : 'menu' }}</mat-icon>
+        <mat-icon class="menu-icon">{{ isExpanded ? 'menu_open' : 'menu' }}</mat-icon>
       </button>
     </div>
 
     <mat-nav-list>
+      
       @for (item of routes; track $index){
       <a mat-list-item
-        [routerLink]="item.path" 
+        [routerLink]= "[item.path]" 
         routerLinkActive="active"
         [matTooltip]="!isExpanded ? item.title : ''"
         matTooltipPosition="right">
         
         <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
         @if (isExpanded) {
-        <span matListItemTitle>{{ item.title }}</span>
+        <span matListItemTitle><b>{{ item.title }}</b></span>
         }
       
       </a>
     }
+    
     </mat-nav-list>
 
   </mat-sidenav>

@@ -9,7 +9,8 @@ export const routes: Routes = [
     component: HomePage,
     title: "Home",
     data: {
-      icon: 'home'
+      icon: 'home',
+      navigation: '/'
     }
   },
   {
@@ -17,7 +18,8 @@ export const routes: Routes = [
     component: IdentitiesPage,
     title: "Identity",
     data: {
-      icon: 'person'
+      icon: 'person',
+      navigation: '/identities'
     }
 
   },
@@ -26,7 +28,8 @@ export const routes: Routes = [
     component: AboutPage,
     title: "About",
     data: {
-      icon: 'settings'
+      icon: 'settings',
+      navigation: '/about'
     }
-  }
+  },
 ];

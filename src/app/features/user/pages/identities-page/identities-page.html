@@ -1,1 +1,27 @@
-<app-navbar><h1>I am the Id</h1></app-navbar>
+<app-navbar>
+
+    <h1>Table of all the identities</h1>
+
+    <table mat-table [dataSource]="dataSource" class="">
+    <!-- Name -->
+    <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- collection -->
+    <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+     <ng-container matColumnDef="collection">
+    <th mat-header-cell *matHeaderCellDef> Weight </th>
+    <td mat-cell *matCellDef="let element"> {{element.collection}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</app-navbar>

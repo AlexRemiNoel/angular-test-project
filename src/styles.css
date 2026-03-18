@@ -1,36 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-  margin: 0;
-  background-color: aqua;
-
+@font-face {
+  font-family: Forevs;
+  src: url("/src/assets/fonts/ForevsDemo-Super.otf");
 }
 
-.sidenav-container {
-  height: 100%;
+:root {
+  --color-primary: #1a1a17;
+  --color-secondary: #353535;
+  --color-accent: #ffd21f;
+  --color-background: #2b2b2b;
+  --color-danger: #b00020;
 }
 
-mat-sidenav {
-  transition: width 0.3s ease;
-  overflow: hidden;
-
-  &.expanded {
-    width: 10%;
-  }
-
-  &.collapsed {
-    width: 3%;
-  }
+html{
+  background-color: var(--color-background);
 }
-
-.toggle-btn {
-  display: flex;
-  justify-content: flex-end;
-  padding: 8px;
-}
-
-mat-nav-list a {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
+body{
+  color-scheme: dark;
 }
