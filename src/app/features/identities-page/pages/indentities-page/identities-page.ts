@@ -4,19 +4,6 @@ import { Navbar } from '../../../../layout/navbar/navbar';
 import { IdentityTable } from "../../components/identity-table/identity-table";
 import { StdBtn } from "../../../../shared/components/std-btn/std-btn";
 
-  export interface PeriodicElement {
-  name: string;
-  position: number;
-  collection: string;
-  }
-
-  
-  const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', collection: 'Aqwe'},
-  {position: 2, name: 'Hydrogen', collection: 'Aqwe'},
-  {position: 3, name: 'Hydrogen', collection: 'Aqwe'},
-  ];
-
 @Component({
   selector: 'app-identities-page',
   imports: [Navbar, MatTableModule, IdentityTable, StdBtn],
@@ -28,8 +15,7 @@ import { StdBtn } from "../../../../shared/components/std-btn/std-btn";
 
 export class IdentitiesPage {
 
-  displayedColumns: string[] = ['position','name', 'collection'];
-  dataSource = ELEMENT_DATA;
+
 
 
 

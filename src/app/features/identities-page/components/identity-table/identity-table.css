@@ -3,8 +3,15 @@ table{
   margin-right: auto;
   width: 50%;
   min-width: 30%;
-  background-color: var(--color-secondary);
   font-weight: 700;
+}
+
+.back{
+  position: relative;
+  background-image: url('/assets/pictures/teto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 td,th{
   color: white;

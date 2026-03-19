@@ -26,7 +26,6 @@ mat-sidenav {
   justify-content: flex-end;
   padding: 1em;
   padding-left: 3em;
-  background-color: var(--color-primary);
   border-width: 0;
 }
 
@@ -40,6 +39,7 @@ mat-nav-list a {
   display: flex;
   align-items: center;
   white-space: nowrap;
+  font-weight: 700;
 }
 
 mat-sidenav-container{

@@ -9,9 +9,9 @@ export interface PeriodicElement {
 
   
   const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', collection: 'Aqwe'},
-  {position: 2, name: 'Hydrogen', collection: 'Aqwe'},
-  {position: 3, name: 'Hydrogen', collection: 'Aqwe'},
+  {position: 1, name: 'Kasane Teto', collection: 'The Red one'},
+  {position: 2, name: 'Hatsune Miku', collection: 'The Blue one'},
+  {position: 3, name: 'Akita Neru', collection: 'The Yellow one'},
   ];
 
 @Component({

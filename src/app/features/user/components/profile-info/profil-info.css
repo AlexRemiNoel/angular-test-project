@@ -1,0 +1,14 @@
+form {
+    text-align: left;
+    margin-left: 43%;
+
+
+}
+label{
+    font-size:x-large;
+}
+input{
+    color: azure;
+    background-color: var(--color-primary);
+    font-size: large;
+}
