@@ -17,3 +17,12 @@ html{
 body{
   color-scheme: dark;
 }
+
+h1{
+  color: var(--color-accent);
+  font-weight:700;
+}
+a{
+  color: var(--color-accent);
+  font-weight: 700;
+}

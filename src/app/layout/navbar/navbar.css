@@ -1,5 +1,9 @@
-.sidenav-container {
+sidenav-container {
   height: 100%;
+}
+
+mat-sidenav-container{
+  height: 100%
 }
 
 mat-sidenav {
@@ -13,6 +17,8 @@ mat-sidenav {
   &.collapsed {
     width: 4em;
   }
+  border-color: var(--color-primary);
+  border-width: 0.2em;
 }
 
 .toggle-btn {
@@ -24,11 +30,11 @@ mat-sidenav {
   border-width: 0;
 }
 
-.menu-icon {
+/* .menu-icon {
   color: var(--color-accent);
   background-color: var(--color-primary);
 
-}
+} */
 
 mat-nav-list a {
   display: flex;
@@ -41,25 +47,21 @@ mat-sidenav-container{
 }
 
 mat-nav-list{
-  background-color: var(--color-primary);
   font-family: Forevs;
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
-mat-sidenav{
+/* mat-sidenav{
   background-color: var(--color-secondary);
   font-family: Forevs;
   
-}
+} */
 
 mat-sidenav-content{
   text-align: center;
 }
 
-.mdc-list-item__primary-text{
-  color: var(--color-accent);
-}
 
 mat-icon-button{
     border-width: 0;
-}
+} 
