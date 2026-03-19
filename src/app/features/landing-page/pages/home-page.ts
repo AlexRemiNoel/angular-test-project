@@ -11,4 +11,5 @@ import { Navbar } from '../../../layout/navbar/navbar';
   styleUrl: './home-page.css',
 })
 export class HomePage {
+  
 }

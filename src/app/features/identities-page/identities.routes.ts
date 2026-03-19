@@ -9,16 +9,16 @@ export const identitiesroutes: Routes = [
     component: IdentitiesPage,
     title: "Identity",
     data: {
-      icon: 'person',
+      icon: 'person_search',
       navigation: '/identities'
     }
   },
   {
     path: 'identities/add',
     component: AddIdentity,
-    title: "Identity",
+    title: "Add",
     data: {
-      icon: 'add',
+      icon: 'person_add',
       navigation: '/identities/add'
     }
   }

@@ -1,0 +1,8 @@
+mat-icon{
+    color: var(--color-accent);
+    padding: 1%;
+    font-size: 5em;
+    text-align: center;
+    height: auto;
+    width: auto;
+} 

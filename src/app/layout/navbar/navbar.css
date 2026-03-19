@@ -17,7 +17,7 @@ mat-sidenav {
   &.collapsed {
     width: 4em;
   }
-  border-color: var(--color-primary);
+  border-color: var(--color-accent);
   border-width: 0.2em;
 }
 
