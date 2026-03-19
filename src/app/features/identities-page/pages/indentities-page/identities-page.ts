@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../../../../layout/navbar/navbar";
 import { MatTableModule } from '@angular/material/table';
+import { Navbar } from '../../../../layout/navbar/navbar';
 
 
 
